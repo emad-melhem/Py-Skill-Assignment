@@ -1,7 +1,7 @@
           # Task 1
           # 1
 x = 25
-y = 3.13
+y = 3.14
 z = "Advanced Python"
 is_active = False
 
@@ -26,7 +26,11 @@ print("------------")
 text = "Python programming is powerful and versatile."
 #       01234567          18
 print(text[7:18]) # slicing from index 0 to 18 except index 18 with step =1.
-
+""" OR
+text_to_find = "programming"
+index = text.find(text_to_find) # return 7
+print(text[index:index + len(text_to_find)])
+"""
         # 2
         
 split_text = text.split(" ") # split the text to list of words without space
@@ -60,7 +64,8 @@ print(student)
 unique_numbers = {1, 2, 3, 4, 5, 5, 4, 3, 2, 1}
 unique_numbers.add(6) # add an item into set.
 unique_numbers.remove(2) # remove item from set.
-print(3 in unique_numbers) # output is true.
+print(unique_numbers)
+print(3 in unique_numbers) # check if 3 in the set.
 
 print("------------")
 
