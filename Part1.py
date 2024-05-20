@@ -1,9 +1,10 @@
           # Task 1
           # 1
-x = 25
-y = 3.14
-z = "Advanced Python"
-is_active = False
+print("------Task1-------")
+x = 25 #integer
+y = 3.14 #float
+z = "Advanced Python" #string
+is_active = False #boolean
 
         # 2
 # I added formatting to the numbers to make the output clearer.
@@ -19,7 +20,7 @@ print(new_string)
 is_active = not is_active # toggle the bool variable.
 print(is_active)
 
-print("------------")
+print("------Task2-------")
 
         # Task 2
         # 1
@@ -29,7 +30,10 @@ print(text[7:18]) # slicing from index 0 to 18 except index 18 with step =1.
 """ OR
 text_to_find = "programming"
 index = text.find(text_to_find) # return 7
-print(text[index:index + len(text_to_find)])
+if index > -1:
+    print(text[index:index + len(text_to_find)])
+else:
+    print("Can't find the word in text")
 """
         # 2
         
@@ -46,7 +50,7 @@ for number in numbers:
 """
 print(squares)
 
-print("------------")
+print("------Task3-------")
 
         # Task 3
         # 1
@@ -67,7 +71,7 @@ unique_numbers.remove(2) # remove item from set.
 print(unique_numbers)
 print(3 in unique_numbers) # check if 3 in the set.
 
-print("------------")
+print("------Task4-------")
 
         # Task 4
         # 1
