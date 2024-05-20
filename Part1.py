@@ -8,12 +8,14 @@ is_active = False
         # 2
 # I added formatting to the numbers to make the output clearer.
 print("{:.2f}".format(x / y))
-print(str(x) + z)
+new_string = str(x) + z
  # OR
  # new_string = "".join([str(x), z])
- # print(new_string)
+print(new_string)
  #OR
- # print(str(x), z, sep="")
+ # print(f"{x}{z}")
+ #OR
+ # print(x, z, sep="")
 is_active = not is_active # toggle the bool variable.
 print(is_active)
 
