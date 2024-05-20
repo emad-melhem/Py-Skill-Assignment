@@ -1,6 +1,8 @@
         # 1
 text = "Python programming is powerful and versatile."
 #       01234567          18
+            
+        # 2  
 print(text[7:18]) # slicing from index 0 to 18 except index 18 with step =1.
 """ OR
 text_to_find = "programming"
@@ -10,7 +12,6 @@ if index > -1:
 else:
     print("Can't find the word in text")
 """
-        # 2
         
 split_text = text.split(" ") # split the text to list of words without space
 print("-".join(split_text)) # join the list with '-'
