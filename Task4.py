@@ -1,11 +1,11 @@
         # 1
 def is_prime(n):
-    lst = [2, 3, 5, 7]
-    for item in lst:
-        #return false if n=1 or n is divisible by one of (2, 3, 5, 7) and not in it.
-        if (n == 1) or (n not in lst and n % item == 0):
+    if n <= 1: # if number is less or equal than 1 return false
+        return False
+    for i in range(2, int(n**0.5) + 1): #check all number between 2 and the square root of number
+        if n % i == 0:
             return False
-    return True # if n is prime
+    return True # return true if n is not divisible by numbers
 
  # I created a list to make the numbers on the screen appear clearer.
 lst_prime_numbers = []
