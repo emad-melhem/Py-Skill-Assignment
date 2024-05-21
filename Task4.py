@@ -19,13 +19,13 @@ list_numbers = list(range(1, 16)) # creat list [1..15]
  # I created a list to make the numbers on the screen appear clearer.
 list_results = []
 for number in list_numbers:
-    print_string = ""
-    if number % 3 == 0:
-        print_string += "Fizz"
-    if number % 5 == 0:
-        print_string += "Buzz"
-    if not print_string:
-        list_results.append(number) # i can use here print(number)
+    if number % 3 == 0 and number % 5 == 0:
+        list_results.append("FizzBuzz")
+    elif number % 3 == 0:
+        list_results.append("Fizz")
+    elif number % 5 == 0:
+        list_results.append("Buzz")
     else:
-        list_results.append(print_string)# i can use here print(print_string)
+        list_results.append(number)
+        
 print(list_results)
