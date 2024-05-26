@@ -1,2 +1,2 @@
-# Py-Skill-Assignment1
+# Py-Skill-Assignment
 Skill Assignment 24-5-2024
