@@ -15,6 +15,9 @@ else:
         
 split_text = text.split(" ") # split the text to list of words without space
 print("-".join(split_text)) # join the list with '-'
+'''or
+print(text.replace(" ", "-"))
+'''
 
         # 3
 numbers = list(range(10, 101, 10)) # creat list numbers 10-100 with step 10
